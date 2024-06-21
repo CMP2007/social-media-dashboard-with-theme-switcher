@@ -2,86 +2,217 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalice.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Social media dashboard with theme switcher</title>
+
 </head>
+<header>
+  <div class="tittleContainer">
+    <h1 class="tittle">Social Media Dashboard</h1>
+    <span class="headerText">Total Followers: 23,004</span>
+  </div>
+  <div class="switchContainer">
+    <span class="headerText">Dark Mode</span>
+    <div class="switch">
+      <input type="checkbox" id="switch" checked />
+      <label for="switch"></label>
+    </div>
+  </div>
+</header>
 <body>
+  <section class="sec1">
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <div class="sec1Item item1">
+      <div class="line1 line"></div>
+      <div class="iconContainer">
+        <img src="./images/icon-facebook.svg" class="icon1" alt="">
+        <span class="itemText green">@nathanf</span>
+      </div>
+      <span class="itemNumber">1987</span>
+      <samp class="itemFollowers">FOLLOWERS</samp>
+      <div class="iconContainer">
+        <img src="./images/icon-up.svg" alt="">
+        <span class="upDownText green">12 Today</span>
+      </div>
+    </div>
 
-  Dark Mode
+    <div class="sec1Item item2">
+      <div class="line2 line"></div>
+      <div class="iconContainer">
+        <img src="./images/icon-twitter.svg" class="icon1" alt="">
+        <span class="itemText">@nathanf</span>
+      </div>
+      <span class="itemNumber">1044</span>
+      <samp class="itemFollowers">FOLLOWERS</samp>
+      <div class="iconContainer">
+        <img src="./images/icon-up.svg" alt="">
+        <span class="upDownText green">99 Today</span>
+      </div>
+    </div>
 
+    <div class="sec1Item item3">
+      <div class="line3 line"></div>
+      <div class="iconContainer">
+        <img src="./images/icon-instagram.svg" class="icon1" alt="">
+        <span class="itemText">@realnathanf</span>
+      </div>
+      <span class="itemNumber">11k</span>
+      <samp class="itemFollowers">FOLLOWERS</samp>
+      <div class="iconContainer">
+        <img src="./images/icon-up.svg" alt="">
+        <span class="upDownText green">1099 Today</span>
+      </div>
+    </div>
+
+    <div class="sec1Item item4">
+      <div class="line4 line"></div>
+      <div class="iconContainer">
+        <img src="./images/icon-youtube.svg" class="icon1" alt="">
+        <span class="itemText">Nathan F.</span>
+      </div>
+      <span class="itemNumber">8239</span>
+      <samp class="itemFollowers">SUBSCRIBERS</samp>
+      <div class="iconContainer">
+        <img src="./images/icon-down.svg" alt="">
+        <span class="upDownText red">144 Today</span>
+      </div>
+    </div>
+  </section>
   
+  <section class="sec2">
+    <h3>Overview - Today</h3>
+    <div class="grid2">
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <div class="sec2Item">
+        <div class="div1">
+          <span class="item2TExt">Page Views</span>
+          <img src="./images/icon-facebook.svg" alt="">
+        </div>
+        <div class="div2">
+          <span class="Item2Number">87</span>
+          <div>
+            <img src="./images/icon-up.svg" alt="">
+            <span class=" sec2Percentage green">3%</span>
+          </div>
+        </div>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="sec2Item">
+        <div class="div1">
+          <span class="item2TExt">Likes</span>
+          <img src="./images/icon-facebook.svg" alt="">
+        </div>
+        <div class="div2">
+          <span class="Item2Number">52</span>
+          <div>
+            <img src="./images/icon-down.svg" alt="">
+            <span class=" sec2Percentage red">2%</span>
+          </div>
+        </div>
+      </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      <div class="sec2Item">
+        <div class="div1">
+          <span class="item2TExt">Likes</span>
+          <img src="./images/icon-instagram.svg" alt="">
+        </div>
+        <div class="div2">
+          <span class="Item2Number">5462</span>
+          <div>
+            <img src="./images/icon-up.svg" alt="">
+            <span class=" sec2Percentage green">2257%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sec2Item">
+        <div class="div1">
+          <span class="item2TExt">Profile Views</span>
+          <img src="./images/icon-instagram.svg" alt="">
+        </div>
+        <div class="div2">
+          <span class="Item2Number">52k</span>
+          <div>
+            <img src="./images/icon-up.svg" alt="">
+            <span class=" sec2Percentage green">1375%</span>
+          </div>
+        </div>
+      </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+      
+      <div class="sec2Item">
+        <div class="div1">
+          <span class="item2TExt">Retweets</span>
+          <img src="./images/icon-twitter.svg" alt="">
+        </div>
+        <div class="div2">
+          <span class="Item2Number">117</span>
+          <div>
+            <img src="./images/icon-up.svg" alt="">
+            <span class=" sec2Percentage green">303%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sec2Item">
+        <div class="div1">
+          <span class="item2TExt">Likes</span>
+          <img src="./images/icon-twitter.svg" alt="">
+        </div>
+        <div class="div2">
+          <span class="Item2Number">507</span>
+          <div>
+            <img src="./images/icon-up.svg" alt="">
+            <span class=" sec2Percentage green">553%</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="sec2Item">
+        <div class="div1">
+          <span class="item2TExt">Likes</span>
+          <img src="./images/icon-twitter.svg" alt="">
+        </div>
+        <div class="div2">
+          <span class="Item2Number">107</span>
+          <div>
+            <img src="./images/icon-down.svg" alt="">
+            <span class=" sec2Percentage red">19%</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="sec2Item">
+        <div class="div1">
+          <span class="item2TExt">Total Views</span>
+          <img src="./images/icon-twitter.svg" alt="">
+        </div>
+        <div class="div2">
+          <span class="Item2Number">1407</span>
+          <div>
+            <img src="./images/icon-down.svg" alt="">
+            <span class=" sec2Percentage red">12%</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
 
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+  <div class="background"></div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="./scripts.js"></script>
 </html>
