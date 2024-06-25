@@ -1,68 +1,39 @@
-/**************************************** Items ******************************************************/
+//All elements and classes are grouped so they can be used in a later cycle.
 const body = document.body;
-const switchItems = document.querySelectorAll(".switch > *");
-const darkBigText = document.querySelectorAll(".tittle, .itemNumber, .Item2Number, h3");
-const darkSmallText = document.querySelectorAll(".headerText, .itemText, .itemFollowers, .item2TExt")
+const switchItems = document.querySelectorAll(".switch, .switch > *");
+const darkBigText = document.querySelectorAll(".tittle, .itemNumber, .Item2Number, h3, .aText");
+const darkSmallText = document.querySelectorAll(".headerText, .itemText, .itemFollowers, .item2TExt, .attributionText")
 const secItems = document.querySelectorAll(".sec1Item, .sec2Item");
 
+const darkItems = [darkBigText, darkSmallText, secItems];
+const darkStyles = [`DarkBigText`, `DarkSmallText`, `DarkCard`];
 
 
-function DarkCard() {
-  if (switchItems[0].checked) {
-    secItems.forEach(elemento => {
-        elemento.classList.add("DarkCard");
-    });
-    console.log('Checkbox seleccionado');
+//The following function is responsible for validating whether the switch is active or not and sends the corresponding parameter while modifying the color of the simplest elements.
+function validateSwitch() {
+  if (!switchItems[1].checked) {
+    chageColors("add");
+    body.classList.add("DarkBody");
+    switchItems[0].classList.add("DarkSwitch")
   } else {
-    secItems.forEach(elemento => {
-        elemento.classList.remove("DarkCard");
-    });
-    console.log('Checkbox deseleccionado');
+    chageColors("remove");
+    body.classList.remove("DarkBody");
+    switchItems[0].classList.remove("DarkSwitch")
   }
 }
 
 
-function addDarkBigText() {
-  if (switchItems[0].checked) {
-    darkBigText.forEach(elemento => {
-        elemento.classList.add("DarkBigText");
+//This function consists of a first for loop, which is used to alternate the value of the element to which the second forEach loop will be applied and the value of the property of the classList object.
+function chageColors(action) {
+  for (let cont = 0; cont < darkItems.length; cont++) {
+    const element = darkItems[cont];
+    element.forEach(item =>{
+      item.classList[action](darkStyles[cont]);
     });
-  } else {
-    darkBigText.forEach(elemento => {
-        elemento.classList.remove("DarkBigText");
-    });
-  }
-}
+  };
+}  
 
 
-
-function addDarkSmallText() {
-    if (switchItems[0].checked) {
-      darkSmallText.forEach(elemento => {
-          elemento.classList.add("DarkSmallText");
-      });
-    } else {
-      darkSmallText.forEach(elemento => {
-          elemento.classList.remove("DarkSmallText");
-      });
-    }
-  }
-  
-  
-function darkBody() {
-    if (switchItems[0].checked) {
-       body.classList.add("DarkBody");
-      } else {
-        body.classList.remove("DarkBody");
-    }
-}
-
-
-
-
-switchItems[0].addEventListener('change', () => {
-    DarkCard();
-    addDarkSmallText();
-    addDarkBigText();
-    darkBody();
+switchItems[1].addEventListener('change', () => {
+    validateSwitch();
   });
