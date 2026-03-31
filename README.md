@@ -1,54 +1,45 @@
-# Frontend Mentor - Social media dashboard with theme switcher solution
+# Social Media Dashboard with Theme Switcher: Advanced DOM Logic
 
-This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H).
+This repository is evidence of my learning journey. It represents a project I undertook to refine my layout and component logic skills before my current specialization in Full Stack development.
 
-## Table of contents
+**Note:** The design and assets were provided by Frontend Mentor. My role was the technical implementation from scratch.
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Continued development](#continued-development)
-- [Author](#author)
+---
 
+## 🌟 About this project
+This is a fully responsive Social Media Dashboard that features a functional **Dark/Light mode switcher**. The challenge focused on maintaining visual consistency across two very different color palettes while handling multiple data cards.
 
-    ## Overview
+The core objective was to move beyond "hardcoded" style changes and implement a scalable way to toggle themes using JavaScript, ensuring that every element—from the background to the smallest text—adapts correctly to the user's preference.
 
-    ### The challenge
+---
 
-    Users should be able to:
+## 🚀 Links
+* **Live Demo:** [SEE DEMO HERE](https://cmp2007.github.io/social-media-dashboard-with-theme-switcher/)
+* **Frontend Mentor Profile:** [View my solutions](https://www.frontendmentor.io/profile/CMP2007)
+* **Original Challenge:** [Social media dashboard with theme switcher](https://www.frontendmentor.io/solutions/social-media-dashboard-dQv4Kg_ZEk)
 
-    - View the optimal layout for the site depending on their device's screen size
-    - See hover states for all interactive elements on the page
-    - Toggle color theme to their preference
+---
 
 ### Screenshot
-- Base desktop design
-![](./images/screenshot1.jpg.jpg)
-- Dark mobile design
-![](./images/screenshot2.jpg.jpg)
 
-### Links
+![](./images/screenshot1.jpg)
+![](./images/screenshot2.jpg)
 
-- Solution URL: (https://www.frontendmentor.io/solutions/social-media-dashboard-dQv4Kg_ZEk)
-- Live Site URL: (https://cmp2007.github.io/social-media-dashboard-with-theme-switcher/)
+---
 
-## My process
+## 📋 Evolution & Context Note
+> ⚠️ **Note on my trajectory:** This project marks the point where I started focusing on **DRY (Don't Repeat Yourself)** principles in JavaScript. Instead of manually changing each element's style, I implemented a logic based on arrays and loops to manage theme transitions efficiently.
 
-### Built with
+## 📋 Technical Milestones of this Stage
+In this phase of my learning, I successfully implemented:
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+* **Efficient Theme Toggling:** Developed a JS function that iterates through grouped element arrays (`darkItems`) to apply or remove CSS classes in a single flow, optimizing performance and code readability.
+* **Complex CSS Grid Layouts:** Created a responsive grid that automatically adjusts from a single column on mobile to a multi-column layout on desktop using `repeat(auto-fit, minmax(200px, 1fr))`.
+* **Advanced CSS Customization:** Extensive use of CSS Variables (`:root`) and linear gradients for borders (like the Instagram card) and interactive elements.
+* **Custom UI Components:** Built a fully custom toggle switch from scratch using a hidden checkbox and stylized labels with smooth CSS transitions.
+* **State Validation:** Implementation of a validation logic for the switch state, ensuring the "Dark Mode" class is applied consistently across the entire `body`.
 
-### Continued development
-
-eThis is the penultimate of the exercises that I decided to do to improve my CSS and JS foundation before continuing with my next topic on my learning path.
-
-## Author
-
-- Frontend Mentor - [CMP2007](https://www.frontendmentor.io/profile/CMP2007)
+## 🛠️ Technologies (at the time)
+* **Vanilla JavaScript:** Array handling, `forEach` loops, and classList manipulation.
+* **HTML5 & CSS3:** CSS Grid, Flexbox, Custom Properties (Variables), and Pseudo-elements.
+* **Responsive Design:** Mobile-first approach with advanced Media Queries.
