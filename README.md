@@ -1,9 +1,11 @@
 # Social Media Dashboard with Theme Switcher: Advanced DOM Logic
 
+> [!Note]
+>> This repository contains a legacy project from my early days as a programmer
+
 This repository is evidence of my learning journey. It represents a project I undertook to refine my layout and component logic skills before my current specialization in Full Stack development.
 
 **Note:** The design and assets were provided by Frontend Mentor. My role was the technical implementation from scratch.
-
 ---
 
 ## 🌟 About this project
